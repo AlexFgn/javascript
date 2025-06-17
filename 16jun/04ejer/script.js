@@ -9,3 +9,19 @@ if (numero > 0) {
 } else {
     console.log("No has introducido un número válido");
 }
+
+
+let input= prompt("ingresa un numero");
+
+let numero= Number (input);
+
+if (isNaN(numero)) {
+  console.log("no es un numero valido")
+}else{
+  if (numero > 0) {
+    console.log(`${numero} es positivo`);
+  }else if (numero < 0){
+    console.log(`${numero} es negativo`);
+//.............................................................// /falta cosas ver apuntes
+  }
+}
