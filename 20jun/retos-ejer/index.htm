@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Ejercicios Arrays</title>
+</head>
+<body>
+  <h1>01 Bloque Ejercicios Arrays</h1>
+  <div class="container">
+    <!-- Ejercico 1: to do list -->
+     <section id="todo" class="ejercicio">
+        <h2>1.To do list</h2>
+        <input type="text" id="taskInput" placeholder="nueva tarea...">
+        <button id="addTaskBtn">Añadir</button>
+        <ul id="taskList"></ul>
+     </section>
+     <!-- ejercicio 2:Formulario Dinamico -->
+      <section id="formulario" class="ejercicio">
+        <h2>2.Formulario de registro</h2>
+        <form id="registerForm">
+        <label>Nombre:<input type="text" name="nombre" required></label>
+        <label>Email:<input type="email" name="email" required></label>
+        <label>Edad:<input type="number" name="edad" min="0" required></label>
+        <button type="submit">Enviar</button>
+        </form>
+        <div id="formResult" class="resultado"></div>
+      </section>
+
+      <!-- ejercicio 3 calculadora de gastos -->
+       <section id="calculadora" class="ejercicio">
+        <h2>3.Calculadora de Gastos</h2>
+        <!-- lo del "min=0" es para que el usuario no pueda poner un valor inferior tambien se puede poner un max" -->
+        <input type="number" id="expense" placeholder="Gasto (€)" min="0">
+        <button id="addExpenseBtn">Agregar gasto</button>
+        <p>Total Gastado: €<span id="totalSpent" class="resultado">0</span></p>
+       </section>
+
+       <!-- Ejercicio 4: Galeria de imagenes -->
+        <section id="galeria" class="ejercicio">
+            <h2>Galeria de imagenes</h2>
+            <button id="prevBtn">Anterior</button>
+            <img id="photo" src="img1.jpg" alt="Galeria" width="200">
+            <button id="nextBtn">Siguiente</button>
+        </section>
+
+        <!-- Ejercicio 5: Clima con API -->
+         <section id="clima" class="ejercicio">
+            <h2>Clima Actual</h2>
+            <input type="text" id="cityInput" placeholder="Ciudad">
+            <button id="getWeatherBtn">Obtener clima</button>
+            <div id="weatherResult" class="resultado"></div>
+         </section>
+  </div>
+
+</body>
+</html>
